@@ -1,3 +1,9 @@
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_leaf = False
+
+
 class Solution:
     def longest_common_prefix(self, strs):
         """
@@ -18,10 +24,40 @@ class Solution:
             prefix += current_letter
         return prefix
 
+    def insert(self, head, word):
+        node = head
+
+        for character in word:
+            node = node.children.setdefault(character, TrieNode())
+
+        node.is_leaf = True
+
+    def longest_common_prefix_trie(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+
+        head = TrieNode()
+        for word in strs:
+            self.insert(head, word)
+
+        lcp = ""
+        node = head
+
+        while node.is_leaf == False and len(node.children) == 1:
+            for character, next_node in node.children.items():
+                lcp += character
+                node = next_node
+
+        return lcp
+
 
 if __name__ == '__main__':
     s = Solution()
     strs = ["flower", "flow", "flight"]
-    res = s.longest_common_prefix(strs)
+    # res = s.longest_common_prefix(strs)
+
+    res = s.longest_common_prefix_trie(strs)
 
     print(res)
