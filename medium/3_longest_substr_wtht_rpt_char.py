@@ -1,5 +1,5 @@
 class Solution:
-    def lengthOfLongestSubstring(self, s):
+    def lengthOfLongestSubstring1(self, s):
         """
         :type s: str
         :rtype: int
@@ -20,6 +20,20 @@ class Solution:
                     break
 
         return max_result
+
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        char_set = set()
+        max_len, start = 0, 0
+        for i, c in enumerate(s):
+            while c in char_set:
+                print(f"for delete {s[start]}")
+                char_set.remove(s[start])
+                start += 1
+                print(f"start {start}")
+            char_set.add(c)
+            print(char_set)
+            max_len = max(max_len, i - start + 1)
+        return max_len
 
 
 if __name__ == '__main__':
