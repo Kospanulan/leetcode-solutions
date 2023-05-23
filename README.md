@@ -25,7 +25,14 @@ You are given two non-empty linked lists representing two non-negative integers.
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
 
+## [5. medium/Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+### [solution](https://github.com/Kospanulan/leetcode-solutions/blob/master/medium/5_longest_palindromic_substring.py)
+
+Given a string s, return the longest palindromic substring in s.
 
 
+## [7. medium/Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+### [solution](https://github.com/Kospanulan/leetcode-solutions/blob/master/medium/7_reverse_integer.py)
 
+Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
 
