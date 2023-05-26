@@ -36,3 +36,8 @@ Given a string s, return the longest palindromic substring in s.
 
 Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
 
+## [70. easy/Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+### [solution](https://github.com/Kospanulan/leetcode-solutions/blob/master/easy/70_climbing_stairs.py)
+
+You are climbing a staircase. It takes n steps to reach the top.
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
