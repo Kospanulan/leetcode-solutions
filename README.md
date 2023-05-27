@@ -41,3 +41,15 @@ Given a signed 32-bit integer x, return x with its digits reversed. If reversing
 
 You are climbing a staircase. It takes n steps to reach the top.
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+
+## [509. easy/Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
+### [solution](https://github.com/Kospanulan/leetcode-solutions/blob/master/easy/509_fibonacci_number.py)
+
+Implementation of the Fibonacci number
+
+
+## [1137. easy/N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
+### [solution](https://github.com/Kospanulan/leetcode-solutions/blob/master/easy/1137_tribonacci_number.py)
+
+Implementation of the Tribonacci number
